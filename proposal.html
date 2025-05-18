@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        * {
+         font-family: "Poppins", sans-serif; 
+         margin: 0; 
+         padding: 0; 
+         box-sizing: border-box;
+         
+        } 
+          body { 
+          background: url('download (3).jpeg'); 
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+           width: 100%; 
+          height: 100dvh; 
+          display: ; 
+          align-items: center; 
+          justify-content: center; 
+          background-size: cover; 
+          background-position: center;
+          padding-top: 40px; 
+          font-size:20px;
+         }
+ .container { 
+ background: rgb(0, 0, 0, 0.1); 
+ width: 90%;
+ margin:5%;
+ margin-bottom: 5%;
+ 
+ padding: 68px;
+ border-radius: 70px; 
+  border: solid 30px rgb(255, 255, 255, 0.1); backdrop-filter: blur(25px); 
+  box-shadow: 0px 0px 30px 20px rgb(0, 0, 0, 0.1); 
+  color: white;
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   }
+   
+   .login-title { 
+   margin-bottom: 16px;
+   font-size: 80px;
+   } 
+   
+    .input-box { 
+   display: flex; 
+   width: 100%; 
+    position: relative; 
+   margin-top: 20px;
+   } 
+   
+    .input-box textarea { 
+   width: 100%; 
+   
+    padding: 50px 86px 0px 86px; 
+    border-radius: 99px; 
+   border: solid 3px transparent; 
+   background: rgb(255, 255, 255, 0.1);
+    outline: none; 
+   caret-color: white;
+    color: white; 
+    font-size:50px;
+   font-weight: 500; 
+    transition: 0.25s; 
+   } 
+   
+   .input-box textarea:focus { 
+   border: solid 3px rgb(255, 255, 255, 0.25); 
+   
+   } 
+   
+    .input-box textarea::placeholder { 
+   color: rgb(255, 255, 255, 0.75); 
+   
+   } 
+   
+   .input-box textarea::-ms-reveal { 
+   filter: invert (100%);
+   }
+   
+   .input-box i { 
+   position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px; 
+   color: rgb(255, 255, 255, 0.75);
+    font-size: 18px; 
+   transition: 0.25s;
+   } 
+   
+   .input-box input:focus + i { 
+   color: white; 
+    } 
+    
+ .remember-forgot-box { 
+    display: flex; 
+    width: 100%;
+    margin-top: 16px; 
+    text-decoration: none;
+    justify-content: space-between; 
+    } 
+   
+   .remember-forgot-box h5 {
+    font-weight: normal; 
+    color: white;
+    text-decoration: none;
+    } 
+    
+   .remember-me { 
+   display: flex; 
+   gap: 8px;
+   } 
+   
+    .forgot-password:hover { 
+    text-decoration: ; 
+    color: white;
+    text-decoration: none;
+    } 
+    
+    #login-button { 
+    width: 100%; /* Remove fixed % width */
+    margin-top: 24px; 
+    padding: 20px 150px; /* Balanced left/right padding */
+    background: #32CDD5; 
+    border: none; 
+    border-radius: 99px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 64px; 
+    gap: 16px;
+    cursor: pointer;
+    outline: transparent 3px solid; 
+    transition: 0.1s; 
+    text-align: center;
+   
+}
+   #opinionForm{
+       align-items: center;
+       display: flex; 
+   flex-direction: column; 
+   align-items: center;
+   justify-content: center;
+   }
+   #send{ 
+   width: 100%; 
+    margin-top: 24px; 
+   padding: 20px 0; 
+    background: #32CDD5; 
+   border: none; 
+    border-radius: 99px; 
+   color: white; 
+    font-weight: bold; 
+   font-size: 60px; 
+   cursor: pointer;
+    outline: transparent 3px solid; 
+   transition: 0.1s; 
+   } 
+   
+   .send{
+       font-size:30px;
+       text-align: center;
+       font-weight: bold; 
+   }
+   .login-button:focus { 
+   outline: #32CDD58A 3px solid; 
+   } 
+   
+   .dont-have-an-account { 
+   font-weight: normal; 
+    margin-top: 12px; 
+    color: white;
+    text-decoration: none;
+   }
+   
+   .reg{
+    color: white;
+    text-decoration: none;
+   }
+   
+   #hed{
+       font-size:100px;
+       text-align: center;
+       font-weight: bold; 
+   }
+   
+   #hi{
+       font-size:50px;
+       text-align: center;
+       line-height: 1.6;
+       font-weight: bol;
+       }
+       
+   #mine{
+       font-size:70px;
+       font-weight: bold; 
+   }
+   
+   #r{
+       font-size:40px;
+   }
+    .containe { 
+ background: rgb(0, 0, 0, 0.1); 
+ width: 90%;
+ margin:5%;
+ margin: ;
+ padding: 20px;
+ padding-top: 150px;
+ padding-bottom: 120px;
+ border-radius: 90px; 
+  border: solid 30px rgb(255, 255, 255, 0.1); backdrop-filter: blur(25px); 
+  box-shadow: 0px 0px 30px 20px rgb(0, 0, 0, 0.1); 
+  color: white;
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   }
+   
+   .message {
+       align-items: center; 
+       font-size:30px;
+       text-align: center;
+   }
+   
+    .hidden {
+      display: none;
+      }
+      
+        #status {
+       align-items: center; 
+       font-size:30px;
+       text-align: center;
+   }
+    </style>
+</head>
+<body><div>
+    
+</div>
+<h1 id="hed" class="containe">The Moment I Found the Right Words.
+
+</h1>
+    <div class="container"> 
+        
+        <br>
+        <p id="hi">Hey dear… remember when I told you<b> I had something to say? </b>Back then, I didn’t really have the words. I just knew that you mattered more to me than I could explain, and <b>I wanted a reason to stay closer to you</b>, even if it meant holding on to a little mystery. 
+        <br><br><b>Days passed</b>, and you kept asking me about it <b>again and again</b>. Every time, <b>I held back — not because I didn’t care</b>, but because the truth was still growing inside me. <b>I told you I was waiting for the right time</b>, and that wasn’t just an<b> excuse</b>. And now, I finally understand why I couldn't say it then. What I wanted to tell you wasn’t just a sentence — it was a feeling, a quiet emotion that kept growing stronger every time we talked, every time you smile, every time you simply existed in my world.
+        </p>
+        <br>
+        <br>
+        <p id="hi">So here it is… <b>I like you. </b>Not just as a friend. Not just because you're kind, smart, or beautiful.<b> I like you—the way you make the ordinary feel special, the way you unknowingly became the most important part of my days.</b> And today, I finally want to say it properly.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="mine">Will you be mine?</p>
+        <br>
+        
+        <div class="message" id="responseMessage"></div>
+
+<div class="button-group" id="buttonGroup">
+  <button id="login-button" type="button" class="yes-btn" onclick="handleClick('Yes')">Yes</button><br><br>
+  <button id="login-button" type="button" class="no-btn" onclick="handleClick('No')">No</button>
+</div>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="hi">But <b>if you don’t feel the same</b>, that’s completely <b>okay</b>. Let’s just pretend this message never happened—and <b>keep everything between us just the way it was</b>, with no awkwardness at all.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <p id="r"><b>Would you like to send me a message?</b></p>
+        <br>
+        
+        
+        <div id="status" class="success-msg"></div>
+        <form id="opinionForm" action="https://formspree.io/f/xwpoazzy" method="POST">
+            
+            <br>
+               <section class="input-box">
+                <textarea type="text" name="username" placeholder="Type your message..."></textarea> 
+                    <i class='bx bxs-user'></i> 
+                </section> 
+                
+                 <br>
+                 
+                 <br>
+                 
+                 <button class="login-button" type="submit" id="send"> Send </button> 
+                 </form>
+                 <br>
+                 <br>
+                 <br>
+                 
+                 <h5 class="dont-have-an-account"> this page is designed by <b>Mohammed Azam</b></h5>
+                 <br>
+                 <br>
+                 
+         </div> 
+    <br>
+    <br>
+    <br>
+     <script>
+    window.onload = function () {
+      setTimeout(() => {
+        alert("Hey... it is important.\n\nPlease take a moment to read this message carefully.");
+      }, 3000); // 5 seconds = 5000 milliseconds
+    };
+    </script>
+    <script>
+  const clickData = JSON.parse(localStorage.getItem("op10")) || {
+    clicked: false,
+    confirmed: false,
+    choice: null
+  };
+
+  const responseMessage = document.getElementById("responseMessage");
+  const buttonGroup = document.getElementById("buttonGroup");
+
+  function handleClick(choice) {
+    if (clickData.confirmed) {
+      responseMessage.innerHTML = "You already provided your answer: " + `<strong>${clickData.choice}</strong>`;
+      return;
+    }
+
+    clickData.clicked = true;
+    clickData.choice = choice;
+    clickData.confirmed = true;
+    localStorage.setItem("op10", JSON.stringify(clickData));
+
+    const formData = new FormData();
+    formData.append("answer", choice);
+
+    fetch("https://formspree.io/f/xwpoazzy", {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    })
+    .then(res => {
+      if (res.ok) {
+        responseMessage.textContent = choice === "Yes"
+          ? "Thank you for saying Yes!"
+          : "It’s okay I’m just glad you’re in my life.";
+        buttonGroup.classList.add("hidden");
+      } else {
+        throw new Error("Formspree error");
+      }
+    })
+    .catch(error => {
+      responseMessage.textContent = "There was an error submitting your answer. Please try again later.";
+      clickData.clicked = false;
+      clickData.confirmed = false;
+      localStorage.setItem("op10", JSON.stringify(clickData));
+    });
+  }
+
+  // On page load
+  if (clickData.confirmed) {
+    buttonGroup.classList.add("hidden");
+    responseMessage.innerHTML = "You have already provided your answer: " + `<strong>${clickData.choice}</strong>`;
+  }
+</script>
+
+<script>
+    const form = document.getElementById('opinionForm');
+    const status = document.getElementById('status');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          status.textContent = "Thanks! Your opinion has been sent.";
+          form.reset();
+        } else {
+          status.textContent = "Oops! Something went wrong.";
+        }
+      }).catch(error => {
+        status.textContent = "Network error!";
+      });
+    });
+  </script>
+    
+</body>
+</html>
