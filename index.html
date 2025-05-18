@@ -278,13 +278,21 @@ document.getElementById('opinionForm').addEventListener('submit', function(e) {
     const enteredPassword = document.getElementById('password').value.trim();
     const statusDiv = document.getElementById('status');
 
-    if (enteredPassword === "4-9-2006" || "04-09-2006" || "4/9/2006" || "04/09/2006" ||"04 09 2006"||"4 9 2006" ||"492006" ||"04092006") {
-        // Redirect to another page
-        window.location.href = "proposal.html";  // Change to your actual page
-    } else {
-        statusDiv.innerHTML = "Incorrect password. Please try again.";
-        statusDiv.style.color = "white";
-    }
+    if (
+  enteredPassword === "4-9-2006" ||
+  enteredPassword === "04-09-2006" ||
+  enteredPassword === "4/9/2006" ||
+  enteredPassword === "04/09/2006" ||
+  enteredPassword === "04 09 2006" ||
+  enteredPassword === "4 9 2006" ||
+  enteredPassword === "492006" ||
+  enteredPassword === "04092006"
+) {
+  window.location.href = "proposal.html";
+} else {
+  statusDiv.innerHTML = "Incorrect password. Please try again.";
+  statusDiv.style.color = "white";
+}
 });
 </script>
 </body>
