@@ -313,11 +313,11 @@
     window.onload = function () {
       setTimeout(() => {
         alert("Hey... it is important.\n\nPlease take a moment to read this message carefully.");
-      }, 3000); // 5 seconds = 5000 milliseconds
+      }, 2000); // 5 seconds = 5000 milliseconds
     };
     </script>
     <script>
-  const clickData = JSON.parse(localStorage.getItem("op10")) || {
+  const clickData = JSON.parse(localStorage.getItem("op11")) || {
     clicked: false,
     confirmed: false,
     choice: null
@@ -335,7 +335,7 @@
     clickData.clicked = true;
     clickData.choice = choice;
     clickData.confirmed = true;
-    localStorage.setItem("op10", JSON.stringify(clickData));
+    localStorage.setItem("op11", JSON.stringify(clickData));
 
     const formData = new FormData();
     formData.append("answer", choice);
@@ -359,7 +359,7 @@
       responseMessage.textContent = "There was an error submitting your answer. Please try again later.";
       clickData.clicked = false;
       clickData.confirmed = false;
-      localStorage.setItem("op10", JSON.stringify(clickData));
+      localStorage.setItem("op11", JSON.stringify(clickData));
     });
   }
 
